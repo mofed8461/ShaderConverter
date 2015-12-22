@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Xshader</title>
+  <style>
+  html
+  {
+    height: 100%;
+  }
+  body
+  {
+    height: 100%;
+  }
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+textarea
+{
+	/*position: relative;*/
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	display: table;
+	/*height: 100%;
+	margin-top: 20px;*/
+	resize: none;
+}
+h3
+{
+	font-weight: bold;
+}
+.center
+{
+	text-align: center;
+}
+#vstxt
+{
+	background-color: #FF8888;
+}
+#pstxt
+{
+	background-color: #8888FF;
+}
+#vs330txt
+{
+	background-color: #FFBBBB;
+}
+#ps330txt
+{
+	background-color: #BBBBFF;
+}
+  </style>
+  <script src="project.js"></script>
+  <!--<script src="jquery.min.js"></script>-->
+</head>
+<body onload="loaded();">
+<div class="center">
+	<h3>HLSL to GLSL code converter</h3><br />
+	HLSL<br />
+	<textarea id="hlsltxt" TextMode="MultiLine" wrap="off"></textarea><br />
+	GLSL 120 Vertex Shader<br />
+	<textarea id="vstxt" TextMode="MultiLine" wrap="off" readonly></textarea><br />
+	GLSL 120 Pixel Shader<br />
+	<textarea id="pstxt" TextMode="MultiLine" wrap="off" readonly></textarea><br />
+	GLSL 330 Vertex Shader<br />
+	<textarea id="vs330txt" TextMode="MultiLine" wrap="off" readonly></textarea><br />
+	GLSL 330 Pixel Shader<br />
+	<textarea id="ps330txt" TextMode="MultiLine" wrap="off" readonly></textarea><br />
+</div>
+</body>
+</html>
